@@ -1,5 +1,6 @@
 <!-- Modal.svelte -->
 <script>
+	// import Portal from '$lib/components/ModalPortal.svelte';
 	export let modalStyle;
 	export let modalTitle;
 	export let modalText;
@@ -18,7 +19,7 @@
 		<div class="modal-box">
 			<h3 class="text-lg font-bold">{modalTitle}</h3>
 			<p class="py-4">
-				{modalText}
+				{@html modalText}
 			</p>
 			<slot />
 			<div class="modal-action">
@@ -60,7 +61,8 @@
 
 <style>
 	.bg-modal {
-		background: red;
+		background: black;
+		opacity: 0.75;
 		position: fixed;
 		top: 0;
 		left: 0;

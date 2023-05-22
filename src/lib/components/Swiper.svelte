@@ -4,7 +4,7 @@
 	import 'swiper/css';
 
 	register();
-
+	export let imageClass;
 	export let images = [];
 	let isSwiperReady = false;
 
@@ -20,7 +20,7 @@
 	<swiper-container slides-per-view={1} centered-slides={true}>
 		{#each images as image}
 			<swiper-slide>
-				<img src={image} alt="Slide" class="w-full" />
+				<img src={image} alt="Slide" class={imageClass} />
 			</swiper-slide>
 		{/each}
 	</swiper-container>

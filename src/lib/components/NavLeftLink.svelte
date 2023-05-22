@@ -34,7 +34,7 @@
 	<a
 		href={link}
 		to={link}
-		class="w-full bg-slate-100 text-left flex items-center justify-center rounded-full p-3.5
+		class="navLeftItem w-full bg-slate-100 text-left flex items-center justify-center rounded-full p-3.5
 	text-xl desktop:justify-start desktop:gap-3.5 justify-items-start"
 	>
 		{#if currentRoute === link}
@@ -42,8 +42,8 @@
 		{:else}
 			<Icon src={IconComponent} class="h-7 text-red-500 w-7" outline />{/if}
 
-		<div class="hidden desktop:inline-block desktop:justify-start desktop:items-center">
+		<p class="hidden desktop:inline-block desktop:justify-start desktop:items-center">
 			{text}
-		</div>
+		</p>
 	</a>
 </div>

@@ -1,6 +1,5 @@
 <script>
 	import NavLeftLink from './NavLeftLink.svelte';
-	import Modal from '$lib/components/Modal.svelte';
 </script>
 
 <div class="mx-auto flex-col justify-center gap-3.5 p-3.5 text-center align-middle tablet:flex">
@@ -19,17 +18,3 @@
 
 	<label for="my-modal-4" class="btn">open modal</label>
 </div>
-
-<Modal
-	modalTitle="Modal Title"
-	modalText="This is a single block of text"
-	modalStyle="modal-link"
-	modalID="my-modal-2"
-/>
-
-<Modal
-	modalTitle="Modal Title"
-	modalText="This is a single block of text"
-	modalStyle="modal-bottom"
-	modalID="my-modal-4"
-/>
