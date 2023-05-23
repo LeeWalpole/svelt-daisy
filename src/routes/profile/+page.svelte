@@ -11,8 +11,8 @@
 	import { Icon, Heart } from 'svelte-hero-icons';
 </script>
 
-<section class="feed w-screen tablet:max-w-[360px] flex flex-col gap-7">
-	<article class="w-screen tablet:max-w-[360px] bg-slate-900">
+<section class="feed w-screen tablet:max-w-[450px] flex flex-col gap-7">
+	<article class="w-screen tablet:max-w-full bg-slate-900">
 		<figure class="w-full aspect-[4/5] bg-red-200 relative flex">
 			<Swiper {images} imageClass="object-fill w-full h-full" />
 		</figure>
@@ -99,5 +99,7 @@
 		</div>
 	</article>
 </section>
+
+<aside>Sidebar</aside>
 
 <!-- The button to open modal -->

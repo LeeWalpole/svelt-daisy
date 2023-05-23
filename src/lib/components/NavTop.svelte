@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100 fixed top-0 left-0 z-20">
+<div class="navbar bg-base-100 fixed top-0 left-0 z-20 tablet:hidden">
 	<div class="navbar-start">
 		<a href="#modal-sideNav" class="btn">
 			<svg

@@ -12,14 +12,16 @@
 </script>
 
 <NavTop />
-<div class="app mx-auto flex min-h-screen max-w-[1500px] text-zinc-300">
+<div class="app mx-auto flex min-h-screen bg-yellow-50 desktop:max-w-[1240px] text-zinc-300">
 	<aside
-		class="z-50 nav-left fixed left-0 top-0 hidden h-full flex-col items-center space-x-7 tablet:flex tablet:w-[120px] tablet:items-start laptop:w-[120px] desktop:w-[250px] desktop:items-start"
+		class="z-50 nav-left fixed top-0 hidden h-full flex-col items-center space-x-7 tablet:flex tablet:w-[120px] tablet:items-start laptop:w-[120px] desktop:w-[250px] desktop:items-start"
 	>
 		<NavLeft />
 	</aside>
 	<div class="ml-0 flex-grow tablet:ml-[120px] desktop:ml-[250px]">
-		<main class="relative"><slot /></main>
+		<main class="relative flex justify-between">
+			<slot />
+		</main>
 	</div>
 	<!-- {/* <aside className="widgets hidden laptop:flex laptop:min-w-[300px]">
 	Widgets
